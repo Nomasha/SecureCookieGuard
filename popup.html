@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SecureCookieGuard</title>
-    <link rel="stylesheet" href="popup.css">
-</head>
+  <meta charset="UTF-8">
+  <title>SecureCookieGuard</title>
+  <link rel="stylesheet" href="popup.css">
 
+  <!-- ✅ Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
 
-<h2>SecureCookieGuard</h2>
+  <div class="container">
 
-<button id="scanBtn">Scan Storage</button>
+    <!-- 🔥 LANDING SCREEN -->
+ <div id="landing">
 
-<h3>Results</h3>
-<div id="results"></div>
+  <div class="landing-inner">
+    <h2 class="app-title">SecureCookieGuard</h2>
+  </div>
 
-<script src="popup.js"></script>
+  <button id="startBtn">Scan Storage</button>
 
+</div>
+
+</div>
+
+    <!-- 🔍 MAIN APP (hidden initially) -->
+    <div id="app" style="display:none;">
+
+    <div class="header">
+  <img src="icons/logo.png" class="header-logo" />
+  <span class="header-title">SecureCookieGuard</span>
+</div>
+
+      <button id="dashboardBtn" style="margin-top:10px; display:none;">
+        View Dashboard
+      </button>
+
+      <button id="backBtn" style="margin-top:10px; display:none;">
+        Back
+      </button>
+
+      <div id="results" class="results"></div>
+
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
